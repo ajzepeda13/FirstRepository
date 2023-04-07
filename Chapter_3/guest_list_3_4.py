@@ -8,10 +8,14 @@ them to dinner. '''
 guest = input('Enter the name of the guest 1: \n')
 guest_list = []
 i = 1 # flag value
+
+while guest == '-1':
+    guest = input('Please enter the name of guest 1 (you need at least one guess): \n')
+
 while guest != '-1':
     i+=1
     guest_list.append(guest)
-    guest = input(f'Enter the name of the guest {i}: \n')
+    guest = input(f'Enter the name of the guest {i} (when finish type: -1): \n')
 
 print(guest_list)
 

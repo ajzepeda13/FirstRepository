@@ -8,6 +8,7 @@ You just heard one of your guests can't make the dinner, so you need to send out
 
 guest = input('Enter the name of the guest 1: \n')
 guest_list = []
+temp_list = []
 i = 1 # flag value
 
 while guest == '-1':
@@ -22,10 +23,12 @@ print(f'Guest List: {guest_list}')
 
 print(len(guest_list))
 if len(guest_list) >= 6:
-    guest_list.pop()
-    guest_list.pop()
-    guest_list.pop()
-    #print(guest_list) # Display people who can't make it
+    for j in range(0,3):
+        temp_guest = guest_list.pop()
+        temp_list.append(temp_guest)
+    print("People who can't make it:")
+    for tempguest in temp_list:
+        print(tempguest)
     for i in range(0,3):
         guest = input(f'Enter the name of the new guest {i} (when finish type: -1): \n')
         guest_list.append(guest)

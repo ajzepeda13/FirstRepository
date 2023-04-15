@@ -19,19 +19,18 @@ while guest != '-1':
     guest_list.append(guest)
     guest = input(f'Enter the name of the guest {i} (when finish type: -1): \n')
 
-print(f'Guest List: {guest_list}')
+print()
+for guests in guest_list:
+    print(guests, end=', ')
 
-print(len(guest_list))
 if len(guest_list) >= 6:
-    for j in range(0,3):
-        temp_guest = guest_list.pop()
-        temp_list.append(temp_guest)
-    print("People who can't make it:")
-    for tempguest in temp_list:
-        print(tempguest)
-    for i in range(0,3):
+    print("\n\nPeople who can't make it:\n")
+    for j in range(0,3): # for loop that pops and appends items in list to post popped items
+        print(guest_list.pop(), end=', ')
+    print('\n')
+    for i in range(0,3): # for to input name of new guests
         guest = input(f'Enter the name of the new guest {i} (when finish type: -1): \n')
-        guest_list.append(guest)
+        guest_list.append(guest) 
 elif len(guest_list) > 2:
     guest_list.pop()
     guest_list.pop()
@@ -41,7 +40,8 @@ elif len(guest_list) == 1:
     guest_list.pop()
     print('The list is empty, please invite more guest!')
 
-
-print(f'New Guest list: {guest_list}')
+print('The new list: ')
+for guests in guest_list:
+    print(guests, end=', ')
 
 

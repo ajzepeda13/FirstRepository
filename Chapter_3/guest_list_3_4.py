@@ -27,9 +27,9 @@ while guest != '-1' and i < 11:
     i+=1
     guest_list.append(guest)
     guest = input(f'Enter the name of the guest {i} (when finish type: -1): \n')
-    print(i)
 
-print(guest_list)
-
+print('The new list: ')
+for guests in guest_list:
+    print(guests, end=', ')
 
 

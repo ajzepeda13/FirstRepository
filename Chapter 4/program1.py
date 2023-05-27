@@ -9,17 +9,18 @@ pizza.
 how much you like pizza. The output should consist of three or more lines
 about the kinds of pizza you like and then an additional sentence, such as
 I really love pizza!
-4-2. Animals: Think of at least three different animals that have a common characteristic.
-Store the names of these animals in a list, and then use a for loop to
-print out the name of each animal.
-• Modify your program to print a statement about each animal, such as
-A dog would make a great pet.
-• Add a line at the end of your program stating what these animals have in
-common. You could print a sentence such as Any of these animals would
-make a great pet!
 
 """
 
 
+favorite_pizzas = ["Peperonni", 'Hawaian', 'Mexican', 'Veggie']
+
+print()
+for pizza in favorite_pizzas:
+    print(pizza)
+
+print()
+print('Those were my favorite types of pizza')
+print()
 
 

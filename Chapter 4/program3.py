@@ -22,6 +22,10 @@ write two for loops to print each list of foods.
 
 """
 
+
+# Libraries
+import math
+
 """
 4-10. Slices: Using one of the programs you wrote in this chapter, add several
 lines to the end of the program that do the following:
@@ -33,3 +37,15 @@ print three items from the middle of the list.
 last three items in the list.
 
 """
+
+my_fav_foods = ['Falafel', 'Pizza','Hamburger','Chicken Parmagian','Bagel','Tacos','Chinese food']
+
+print(f'The first three items in the list are: {my_fav_foods[:3]}')
+
+lenght_div2= len(my_fav_foods) / 2 
+
+print(lenght_div2)
+
+round_down = math.floor(lenght_div2)
+
+print(f'Three items in the middle of the list are: {my_fav_foods[(round_down-1):]}')

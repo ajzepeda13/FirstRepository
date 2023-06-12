@@ -29,7 +29,7 @@ import math
 """
 4-10. Slices: Using one of the programs you wrote in this chapter, add several
 lines to the end of the program that do the following:
-• Print the message The first three items in the list are:. Then use a slice to
+• Print the message The first three items in the list are: Then use a slice to
 print the first three items from that program’s list.
 • Print the message Three items from the middle of the list are:. Use a slice to
 print three items from the middle of the list.
@@ -38,7 +38,8 @@ last three items in the list.
 
 """
 
-my_fav_foods = ['Falafel', 'Pizza','Hamburger','Chicken Parmagian','Bagel','Tacos','Chinese food']
+my_fav_foods = ['Falafel', 'Pizza','Hamburger','Chicken Parmagian','Bagel','Tacos','Chinese food', 'Bao bao','Enchiladas', 
+'tostadas', 'test', 'test2']
 
 print(f'The first three items in the list are: {my_fav_foods[:3]}')
 
@@ -48,4 +49,4 @@ print(lenght_div2)
 
 round_down = math.floor(lenght_div2)
 
-print(f'Three items in the middle of the list are: {my_fav_foods[(round_down-1):]}')
+print(f'Three items in the middle of the list are: {my_fav_foods[(round_down-1):((round_down-1)+3)-len(my_fav_foods)]}')
